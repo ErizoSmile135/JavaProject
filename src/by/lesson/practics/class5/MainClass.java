@@ -59,7 +59,7 @@ public class MainClass {
 
         System.out.println("*************");
         System.out.println("Выставка:");
-        for(ElectricalAppliances el: appl){
+        for (ElectricalAppliances el : appl) {
             el.work();
         }
         System.out.println("*************");
@@ -73,7 +73,7 @@ public class MainClass {
         //честно говоря 9 и 10 понимаю что суть в том, чтобы посмотреть на имплементацию разных интерфейсов
         //но как показать не совсем понял. Сделал вот так. Пункт 10 сделал просто по определению есть/нет класс,
         // если переписывать будет так же как в п.9
-        for(KitchenAppliances el: kichArr){
+        for (KitchenAppliances el : kichArr) {
             System.out.println("///////////////");
             System.out.println(el.getClass());
             el.workKichen();
@@ -83,7 +83,7 @@ public class MainClass {
 
         System.out.println("\n*************");
         System.out.println("Выставка Кофемашин:");
-        for(ElectricalAppliances el: appl){
+        for (ElectricalAppliances el : appl) {
             if (el instanceof CoffeeMachine) el.work();
         }
         System.out.println("*************");
